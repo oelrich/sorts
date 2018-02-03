@@ -2,7 +2,7 @@ image:
   - Visual Studio 2017
 clone_floder: c:\project\source
 build_script:
-  - cmd: >-
+- cmd: >-
     mkdir build
     cd build
     cmake c:\project\source -G "Visual Studio 15"
