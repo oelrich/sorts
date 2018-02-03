@@ -2,5 +2,8 @@
 #include <functional>
 
 int main() {
-  [out = std::ref(std::cout << "Hello ")](){ out.get() << "world!"; }();
+  auto bop = [out = std::ref(std::cout << "Hello ")](){ out.get() << "world!" << '\n'; };
+  bop();
+  bop();
+
 }
